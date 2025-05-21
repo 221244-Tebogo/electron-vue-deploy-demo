@@ -1,24 +1,24 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const selectedImage = ref('https://picsum.photos/1600/900')
-const MessageTo = ref('3rd-years')
-const Message = ref('May you always create bugs no one else can fix.')
-const MessageFrom = ref('Armand')
+const selectedImage = ref('https://cdn.pixabay.com/photo/2024/05/09/04/11/flamingo-8749724_1280.jpg')
+const MessageTo = ref('Michaela')
+const Message = ref('We’re on the last lap! Let’s cruise through the bugs, and vibe through the chaos')
+const MessageFrom = ref('Tebogo')
 
 </script>
 
 <template>
   <div class="fullscreen-message" :style="`background-image: url('${selectedImage}');`">
     <div class="message-content">
-      <h4>Dear {{ MessageTo }},</h4>
+      <h4>To {{ MessageTo }},</h4>
       <h2>
         {{ Message }}
       </h2>
       <h5>Sincerely,<br/>{{ MessageFrom }}</h5>
     </div>
   </div>
-    
+
 </template>
 
 
